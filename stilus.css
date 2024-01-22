@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+* {
+	padding: 0px;
+	margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #2eb8b8;
+    background-image: url("kepek/hatter.jpg");
+    padding: 10px;
+}
+main{    
+    background-color: #ffffe6;	
+    font-family: 'Risque', cursive;
+    width: 80%;
+	max-width: 1300px;
+	margin: auto;
+	display: grid;
+	grid-template-areas: "h h h" "ab ar aj" "f f f";
+}
+header {    
+    font-family: 'Great Vibes', cursive;
+    background-color: #1f7a7a;
+    color: #ffffe6;
+    grid-area: h;
+}
+header h1{
+    margin: auto;
+    margin-top:30px;
+    margin-bottom:30px;
+    width: 80%;
+    text-align: center;
+    font-size: 400%;
+}
+nav{
+	grid-area: n;
+    display: block;    
+    padding: 5px;
+    margin: 5px; 
+    overflow: hidden;
+    font-size: 110%;
+}
+nav a{
+    text-decoration: none;
+    display: block;
+    padding-left: 22px;
+    color: black;
+}
+nav a:hover{    
+    background-repeat: no-repeat;
+    background-color: #1f7a7a; 
+    color: #ffffe6;
+}
+aside {
+	max-width: 300px;
+    display: block;
+    text-align: justify;
+    padding: 12px;
+    margin: 0px;
+}
+aside a{
+    text-decoration: none;
+    color: #1f7a7a;
+}
+aside li {
+	padding: 0px 60px 20px 0px;
+	list-style-type: none;
+}
+aside a:hover{
+    background-color: #1f7a7a; 
+    color: #ffffe6;
+}
+.bal {
+	grid-area: ab;
+}
+.jobb {
+	grid-area: aj;
+	padding: 20px 12px 12px 12px;
+}
+.jobb li {
+	padding: 0px 60px 0px 0px;
+}
+section{    
+    border-left: 2px #1f7a7a dotted;
+    border-right: 2px #1f7a7a dotted;    
+    padding: 0px 15px 50px 15px;
+}
+section h1, .tablazatcim{
+    margin-top: 0px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-variant: small-caps;    
+    color: white;    
+    text-shadow: -1px 0 #1f7a7a, 0 1px #1f7a7a, 1px 0 #1f7a7a, 0 -1px #1f7a7a;
+    font-size: 130%;
+}
+section h2{
+    text-transform: uppercase;
+    font-variant: small-caps;
+    font-size: 90%;
+}
+section a{
+    text-decoration: none;
+    color: #1f7a7a;
+}
+section a:hover{
+    background-color: #1f7a7a; 
+    color: #ffffe6;
+}
+table {
+    font-size: 60%;
+}
+article{
+	font-size: 110%;
+	grid-area: ar;
+    text-align: justify;
+}
+.munkaklista{
+    text-align: center;
+    list-style-type: none;
+    margin: 4px;
+}
+footer{
+	grid-area: f;
+    background-color: #1f7a7a;
+    color: #ffffe6;
+    text-align: center;
+    padding: 10px;
+}
+.mikrokep{
+    display: block;
+    padding: 10px 10px 10px 10px;
+    background-color: #1f7a7a;
+    float: left;
+    width: 326px;
+    text-align: center;
+    color: white;
+    margin: 20px 35px 40px 35px;
+}
+.mikrokep img {
+    border: 2px #ffffe6 solid;
+}
+span {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 115%;
+}
+.felesleg {
+    display: none;
+}
+#special {
+    padding-top: 20px;
+    font-size: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Tablet*/
+@media only screen and (max-width: 1200px) {
+    main {
+        grid-template-areas: "h h h" "ab ab ab" "ar ar ar" "aj aj aj" "f f f";
+    }
+    section {    
+        border-left: none;
+        border-right: none;
+        border-top: 2px #1f7a7a dotted;
+        border-bottom: 2px #1f7a7a dotted;
+    }
+    table {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+/*Telefon*/
+@media only screen and (max-width: 580px) {
+    main {
+        font-size: 85%;
+        width: 371px
+    }
+    header {
+        width: 371px
+    }
+    section {
+        width: 371px;
+    }
+    .mikrokep {
+        margin: 20px 35px 40px 10px;
+    }
+    table {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
